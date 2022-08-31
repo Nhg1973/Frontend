@@ -1,0 +1,47 @@
+/* Section: Skills */
+.section-skills {
+    padding-bottom: 120px;
+}
+
+.skill + .skill {
+    margin-top: 50px;
+}
+
+.skill h4 {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin: 0 0 15px;
+}
+
+
+#file {
+    background-color: #212121;  
+	width: 100%;
+	
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px) {
+    
+	/* Section: Skills */
+	.section-skills .col-md-4 + .col-md-4,
+	.skill + .skill {
+		margin-top: 20px;
+	}
+
+	.skill h4 {
+		font-size: 22px;
+	}
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+    
+	/* Section: Skills */
+	.skill h4 {
+		text-transform: uppercase;
+		margin-bottom: 10px;
+	}
+}

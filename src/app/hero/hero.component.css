@@ -1,0 +1,85 @@
+.hero { 
+    background: url(../../assets/img/hero.jpg) no-repeat center / cover; 
+    height: 100%;
+    width: 100%;
+    min-height: 700px;
+}
+
+.hero .container {
+    position: relative;
+    height: 100%;
+}
+
+.hero .col-md-6:first-child {
+    position: absolute;
+    top: 35%;
+    left: 0;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    z-index: 2;
+}
+
+.hero .col-md-6:last-child {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.hero h1 {
+    font-size: 46px;
+    font-weight: 700;
+    margin: 0 0 15px;
+    text-transform: uppercase;
+}
+
+.job-title {
+    font-size: 22px;
+    margin-bottom: 30px;
+    line-height: 1;
+} 
+
+.hero img {
+    height: 600px;
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px) {
+
+	.hero h1 {
+		font-size: 38px
+	}
+
+	.job-title {
+		font-size: 20px;
+	}
+
+	.hero  img {
+		height: 420px;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+
+    .hero .col-md-6:first-child {
+        top: 30%;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+
+    .job-title {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .hero img {
+        height: 360px
+    }
+}
+

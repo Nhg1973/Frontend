@@ -1,0 +1,120 @@
+.site-main {
+    position: relative;
+    margin-bottom: 100px;
+    background-color: #fff;
+    z-index: 1;
+}
+/* site-section */
+.site-section {
+   padding-top: 120px;
+}
+
+.site-section h2,
+.site-section h3 {
+    font-size: 36px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.img-lines {
+    margin: 15px 0 40px;
+}
+
+.site-section p {
+    margin-bottom: 35px;
+}
+
+
+
+/* Section: Form*/
+.section-form {
+    padding-bottom: 120px;
+}
+
+.section-form .btn {
+    margin-top: 40px;
+}
+
+/* Section: Form*/
+.section-form {
+    padding-bottom: 120px;
+}
+
+.section-form .btn {
+    margin-top: 40px;
+}
+
+
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px) {
+
+    .site-section {
+		padding-top: 90px;
+	}
+
+	.section-skills,
+	.section-portfolio,
+	.section-form {
+	    padding-bottom: 90px;
+	}
+
+	.site-section h2,
+	.site-section h3 {
+		font-size: 32px
+	}
+
+	.servicios {
+		width: 200px;
+		height: 100px;
+	}
+
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+	.site-main {
+		margin-bottom: 140px;
+	}
+
+	/* site-section */
+	.site-section {
+	   padding-top: 60px;
+	}
+
+	.section-skills,
+	.section-portfolio,
+	.section-form {
+	    padding-bottom: 60px;
+	}
+
+	.site-section h2,
+	.site-section h3 {
+	    font-size: 28px;
+	}
+
+	.servicios {
+		width: 100px;
+		height: 50px;
+	}
+
+	.img-lines {
+	    margin: 10px 0 30px;
+		width: 100px;
+	
+	}
+
+	.site-section p {
+	    margin-bottom: 25px;
+	}
+
+	/* Section: Form */
+	.section-form .btn {
+		margin-top: 25px;
+	}
+}
+
+

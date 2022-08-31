@@ -1,0 +1,19 @@
+
+
+    <section id="service" class="site-section section-services overlay text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Los servicios que ofrezco</h3>
+                    <img src="../../../assets/img/lines.svg" class="img-lines" alt="lines">
+                </div>
+                <div *ngFor="let servicio of misServicios"  class="col-sm-4">
+                    <div class="service">
+                        <img id="card" [src]="servicio.img" alt="Front End Developer">
+                        <h4>{{servicio.servicio}}</h4>
+                        <p>{{servicio.descripcion}}</p>
+                    </div><!-- /.service -->
+                </div>
+            </div>
+        </div>
+    </section><!-- /.secton-services -->

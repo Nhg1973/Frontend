@@ -1,0 +1,22 @@
+
+    <section class="site-section section-skills">
+        <div class="container">
+            <div class="text-center">
+                <h3>Mis habilidades</h3>
+                <img src="../../../assets/img/lines.svg" class="img-lines" alt="lines">
+            </div>
+            <div class="row">
+                <div *ngFor="let habilidad of mihabilidad" class="col-md-4">
+                    <div class="skill">
+                        <h4>{{habilidad.lenguaje}}</h4>
+                   
+                        <span >{{habilidad.progreso}}%</span>
+                            <progress id="file" [value]="habilidad.progreso" max="100"></progress>
+                            <!-- /.progress-bar -->
+                           
+                     
+                    </div><!-- /.skill -->
+                </div>
+            </div>
+        </div>
+    </section><!-- /.secton-skills -->

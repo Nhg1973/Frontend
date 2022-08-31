@@ -1,0 +1,74 @@
+{
+	
+    "nombre": "Nahuel GUERCI",
+    "jobtitle": "Full Stack Developer",
+    "contact": "Mas sobre mí",
+    "portfolio": "Explarar mas",
+    "imgAlex": "assets/img/alex-vidal.png",
+    
+    "Main":
+    {
+		"titulo": "Algo sobre mí",
+		"img": "../..assets/img/lines.sng",
+		"p": "Descripción de algún texto no muy largo",
+		"a": "descargar"
+    },
+    "Habilidades":
+        [
+        {
+        "lenguaje": "Html",
+        "progreso":100
+        },
+        {"lenguaje": "Python",
+        "progreso": 75},
+        {"lenguaje":"JavaScript",
+        "progreso":82},
+        {"lenguaje":"Ruby",
+        "progreso":66},
+        {"lenguaje":"Php",
+        "progreso":97},
+        {"lenguaje":"Java",
+        "progreso":45}
+        ],
+    "Service":
+        [
+            {"servicio": "Front-End",
+            "img":"../../../assets/img/front-end.jpg",
+            "descripcion":"texto Hola como te va"},
+            {"servicio": "Back-End",
+            "img":"../../../assets/img/back-end.jpg",
+            "descripcion":"texto Hola como te fue"},
+            {"servicio": "Desarrollo",
+            "img":"../../../assets/img/consultancy.jpg",
+            "descripcion":"texto Hola como te estas"}
+        ],
+   
+    "Portfolio":
+    [
+        {
+        "img":"../../../assets/img/space.jpg",
+        "h4":"Hombre en la Luna"
+        },
+        {
+        "img":"../../../assets/img/Portfolio-2.jpg",
+        "h4":"Carrito de Compras"
+        },
+        {
+        "img":"../../../assets/img/Portfolio-3.jpg",
+        "h4":"Counter"
+        },
+        {
+        "img":"../../../assets/img/Portfolio-4.jpg",
+        "h4":"Modificando Porfolio"
+        },
+        {
+        "img":"../../../assets/img/Portfolio-5.jpg",
+        "h4":"Up"
+        },
+        {
+        "img":"../../../assets/img/Portfolio-6.jpg",
+        "h4":"Juego"
+        }
+    ]
+    
+}
