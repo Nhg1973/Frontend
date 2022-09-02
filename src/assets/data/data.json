@@ -47,27 +47,33 @@
     [
         {
         "img":"../../../assets/img/space.jpg",
-        "h4":"Hombre en la Luna"
+        "h4":"Hombre en la Luna",
+        "target":"#portfolioItem1"
         },
         {
         "img":"../../../assets/img/Portfolio-2.jpg",
-        "h4":"Carrito de Compras"
+        "h4":"Carrito de Compras",
+        "target":"#portfolioItem2"
         },
         {
         "img":"../../../assets/img/Portfolio-3.jpg",
-        "h4":"Counter"
+        "h4":"Counter",
+        "target":"#portfolioItem3"
         },
         {
         "img":"../../../assets/img/Portfolio-4.jpg",
-        "h4":"Modificando Porfolio"
+        "h4":"Modificando Porfolio",
+        "target":"#portfolioItem4"
         },
         {
         "img":"../../../assets/img/Portfolio-5.jpg",
-        "h4":"Up"
+        "h4":"Up",
+        "target":"#portfolioItem5"
         },
         {
         "img":"../../../assets/img/Portfolio-6.jpg",
-        "h4":"Juego"
+        "h4":"Juego",
+        "target":"#portfolioItem6"
         }
     ]
     
