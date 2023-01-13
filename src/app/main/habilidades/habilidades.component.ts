@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PorfolioService } from 'src/app/servicios/porfolio.service';
-
+import { ActivatedRoute, Params } from '@angular/router';
 
 @Component({
   selector: 'app-habilidades',
@@ -11,14 +11,17 @@ export class HabilidadesComponent implements OnInit {
 
   mihabilidad:any;
 
-  constructor(private datosPorfolio:PorfolioService) { }
+  constructor(private activatedRoute: ActivatedRoute,
+    private datosPorfolio: PorfolioService) { }
 
   ngOnInit(): void {
-    this.datosPorfolio.obtenerDatos().subscribe(data=>{
-     this.mihabilidad = data.Habilidades;
-     
-    });
-
+    this.activatedRoute.queryParams.subscribe(params => {
+      const parametro: any =  this.activatedRoute.snapshot.params['id'];  
+      this.datosPorfolio.obtenerPortfolio(parametro).subscribe(data=>{
+      this.mihabilidad = data.habilidades;
+      //console.log(this.mihabilidad.habilidades);
+        });
+      });
+    }
+  
   }
-
-}

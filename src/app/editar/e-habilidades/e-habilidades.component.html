@@ -1,0 +1,46 @@
+
+
+<form [formGroup]="form" class="m-3">
+    <table class="table">
+        <thead>
+            <tr>
+            <th scope="col">Habilidad</th>
+            <th scope="col">Acción</th>
+            <th scope="col">Magmitud</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="text"  formControlName="nuevaHabilidad" placeholder="Nueva habilidad"></td>
+                <td><button type="submit" (click)="creaHabilidad($event)">Crear</button></td>
+                <td><input type="text"  formControlName="nuevoValor" placeholder="% dominada"></td>
+                
+            </tr>
+            <tr *ngFor="let habilidad of miHabilidad" >
+                
+                <td>{{habilidad.lenguaje}}</td>
+                <td><button type="submit" (click)="onEnviar($event, habilidad.id)">modificar</button></td>
+                <td>
+                    <input type="text"  formControlName="valor" value="{{habilidad.progreso}}"
+                    placeholder="{{habilidad.progreso}}"></td>
+                <td><button type="submit"  (click)="offEnviar($event, habilidad.id)">eliminar</button></td>
+
+                
+            </tr>
+        </tbody>
+    </table>
+       
+
+</form>
+
+<a [routerLink]="['/persona/{{miHabilidad.nombre}']" >
+    volver a MENU
+</a>
+
+
+
+
+
+

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PorfolioService } from 'src/app/servicios/porfolio.service';
+import { ActivatedRoute, Params } from '@angular/router';
 
 
 @Component({
@@ -11,12 +12,17 @@ export class TrabajosComponent implements OnInit {
 
   miTrabajos:any;
 
-  constructor(private datosPorfolio:PorfolioService) { }
+  constructor(private activatedRoute: ActivatedRoute,
+    private datosPorfolio: PorfolioService) { }
 
   ngOnInit(): void {
-    this.datosPorfolio.obtenerDatos().subscribe(data=>{
-     this.miTrabajos = data.Portfolio;
-    });
+    this.activatedRoute.queryParams.subscribe(params => {
+      const parametro: any =  this.activatedRoute.snapshot.params['id'];  
+      this.datosPorfolio.obtenerPortfolio(parametro).subscribe(data=>{
+      this.miTrabajos = data.portfolio;
+     // console.log(this.miTrabajos);
+        });
+      });
+    }
+  
   }
-
-}

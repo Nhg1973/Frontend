@@ -1,0 +1,117 @@
+
+    <section class="h-100 gradient-form" style="background-color: #eee;">
+      <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-xl-10">
+            <div class="card rounded-3 text-black">
+              <div class="row g-0">
+                <div class="col-lg-6">
+                  <div class="card-body p-md-5 mx-md-4">
+    
+                    <div class="text-center">
+                      <img src="../../assets/img/logo.png"
+                        style="width: 185px;" alt="logo">
+                      <h4 class="mt-1 mb-5 pb-1">Bienvenido a Portfolio ARG</h4>
+                    </div>
+    
+                     <form [formGroup]="form" class="m-3" (ngSubmit)="onEnviar($event)">
+                      <p>Ingreso para editar tú portfolio</p>
+    
+                      <div class="form-outline mb-4">
+                          
+                        <input type="text" formControlName="nombreUsuario" id="form2Example11" class="form-control"
+                        [ngClass]="{'is-invalid':NombreUsuario?.errors && NombreUsuario?.touched, 
+                        'is-valid':!NombreUsuario?.errors && !NombreUsuario?.touched}">
+
+                        <label class="form-label" for="form2Example11">Nombre</label>
+
+                        <div *ngIf="NombreUsuario?.errors && NombreUsuario?.touched">
+                          <p *ngIf="NombreUsuario?.hasError('required')" class="text-danger">
+                                El nombre es requerido
+                          </p>
+                          <p *ngIf="NombreUsuario?.hasError('minlength')" class="text-danger">
+                            El nombre debe tener al menos 5 letras
+                          </p>
+                        </div>
+
+                      </div>
+    
+                      <div class="form-outline mb-4">
+                        
+                        <input type="password" class="form-control" id="form2Example22" class="form-control"  formControlName="password"  id="exampleInputPassword1">
+                        <label class="form-label" for="form2Example22">Password</label>
+                        <div *ngIf="Password?.errors && Password?.touched">
+                          <p *ngIf="Password?.hasError('required')" class="text-danger">
+                                La contraseña es requerida
+                          </p>
+                          <p *ngIf="NombreUsuario?.hasError('minlength')" class="text-danger">
+                            El nombre debe tener al menos 5 letras
+                          </p>
+                         
+                        </div>
+                      </div>
+    
+                      <div class="text-center pt-1 mb-5 pb-1">
+                        <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="submit">Log
+                          in</button>
+                        
+                      </div>
+    
+                    </form>
+                    <button class="text-muted" onclick="alert('Envia contraseña al correo')">Olvido password?</button>
+    
+                  </div>
+                </div>
+                <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
+                  <div class="text-white px-3 py-4 p-md-5 mx-md-4">
+                    <h4 class="mb-4">Mas que solo un Portfolio</h4>
+                    <p class="small mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!--form [formGroup]="form" class="m-3" (ngSubmit)="onEnviar($event)">
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="text" formControlName="nombreUsuario"  
+        [ngClass]="{'is-invalid':NombreUsuario?.errors && NombreUsuario?.touched, 
+        'is-valid':!NombreUsuario?.errors && !NombreUsuario?.touched}"
+        class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        
+        <div *ngIf="NombreUsuario?.errors && NombreUsuario?.touched">
+          <p *ngIf="NombreUsuario?.hasError('required')" class="text-danger">
+                El nombre es requerido
+          </p>
+          <p *ngIf="NombreUsuario?.hasError('minlength')" class="text-danger">
+            El nombre debe tener al menos 5 letras
+          </p>
+        </div>
+      </div>
+   
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control"  formControlName="password"  id="exampleInputPassword1">
+        <div *ngIf="Password?.errors && Password?.touched">
+          <p *ngIf="Password?.hasError('required')" class="text-danger">
+                La contraseña es requerida
+          </p>
+          <p *ngIf="NombreUsuario?.hasError('minlength')" class="text-danger">
+            El nombre debe tener al menos 5 letras
+          </p>
+         
+        </div>
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form-->
+ 

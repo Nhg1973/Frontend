@@ -1,0 +1,20 @@
+<form [formGroup]="form" class="m-3" (ngSubmit)="onEnviar($event)">
+    <h1>Main</h1>
+    <br>
+    <br>
+
+    <label> Nombre: </label> 
+    <input type="text" placeholder="{{miPersona.titulo}}" value="{{miPersona.titulo}}" formControlName="titulo"  >
+    <label> Apellido: </label>
+    <input type="text" placeholder="{{miPersona.p}}"  formControlName="p"  >
+    <label> Profesión: </label>
+    <input type="text" placeholder="{{miPersona.a}}"  formControlName="a"  >
+
+   
+  <button> editar </button>
+  <button [routerLink]="['/persona/{{miHabilidad.nombre}']">
+    volver a MENU
+  </button>
+  </form>
+
+

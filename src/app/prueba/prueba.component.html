@@ -1,0 +1,107 @@
+<div class="container">
+  <div class="card">
+    <img src="../../assets/img/mano.jpg" alt="Person" class="card__image">
+    <p class="card__name">Tu portfolio</p>
+    <div class="grid-container">
+
+      <div class="grid-child-posts">
+        Les gusto
+      </div>
+
+      <div class="grid-child-followers">
+        Likes
+      </div>
+
+    </div>
+    <ul class="social-icons">
+      <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+      <li><a href="#"><i class="fa fa-codepen"></i></a></li>
+    </ul>
+    <button class="btn draw-border" onclick="alert('Crea un nuevo usuario en la BD al regresar permite editar')">Crear</button>
+  
+
+  </div>
+  <script>
+    console.log(lista);
+  </script>
+  <div class="card" *ngFor="let portfolio of lista">
+    <img src="{{portfolio.imgAlex}}" alt="Person" class="card__image">
+    <p class="card__name">{{portfolio.nombre}} {{portfolio.apellido}}</p>
+    <div class="grid-container">
+
+      <div class="grid-child-posts">
+        156 Visitas
+      </div>
+
+      <div class="grid-child-followers">
+        1012 Likes
+      </div>
+
+    </div>
+    <ul class="social-icons">
+      <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+      <li><a href="#"><i class="fa fa-codepen"></i></a></li>
+    </ul>
+    <button class="btn draw-border" routerLink="/portfolio/{{portfolio.nombre}}">Ver</button>
+    <button class="btn draw-border" routerLink="/login" >Editar</button>
+
+  </div>
+</div>
+
+
+<!--div class="row" >
+  <div class="grid-container" >
+    <div class="grid-item" *ngFor="let portfolio of lista">
+      <div class="card" style="width: 18rem;" >
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{portfolio.nombre}} {{portfolio.apellido}}</h5>
+          <p class="card-text">{{portfolio.nombre}}</p>
+          <a routerLink="/portfolio/{{portfolio.nombre}}" class="btn btn-primary">Ver</a>
+          <a routerLink="/login"  class="btn btn-success">Editar</a>
+        </div>
+      </div>
+
+    </div>
+   
+</div--> 
+
+<!--table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Apellido</th>
+        <th scope="col">Editar</th>
+        <th scope="col">Ver</th>
+      </tr>
+    </thead>
+    <tbody>
+            <tr *ngFor="let portfolio of lista" >
+                <th scope="row">{{portfolio.id}}</th>
+                <td>{{portfolio.nombre}}</td>
+                <td>{{portfolio.apellido}}</td>
+                <td><a routerLink="/portfolio/{{portfolio.nombre}}">ver</a></td>
+                <td><a routerLink="/login">editar</a></td>
+            </tr>
+            <tr >
+                <th>0</th>
+                <td>Nuevo</td>
+                <td>portfolio</td>
+                <td><a routerLink="/portfolio">Salir</a></td>
+                <td><a routerLink="/login">Crear</a></td>
+            </tr>
+   
+    </tbody>
+  </table-->
+  
+
+  
+
+
+
+    

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PorfolioService } from '../servicios/porfolio.service';
+import { ActivatedRoute, Params } from '@angular/router';
 
 @Component({
   selector: 'app-hero',
@@ -9,11 +10,16 @@ import { PorfolioService } from '../servicios/porfolio.service';
 export class HeroComponent implements OnInit {
   miPortfolio:any;
 
-  constructor(private datosPorfolio:PorfolioService) { }
-
+  constructor(private activatedRoute: ActivatedRoute,
+    private datosPortfolio: PorfolioService) { }
+  
   ngOnInit(): void {
-    this.datosPorfolio.obtenerDatos().subscribe(data=>{
-     this.miPortfolio = data;
+    this.activatedRoute.queryParams.subscribe(params => {
+    const parametro: any =  this.activatedRoute.snapshot.params['id'];  
+    this.datosPortfolio.obtenerPortfolio(parametro).subscribe(data=>{
+      this.miPortfolio = data;
+    //console.log(this.miPortfolio)
+      });
     });
   }
 

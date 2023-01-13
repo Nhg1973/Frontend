@@ -7,15 +7,30 @@ import { MainModule } from './main/main.module';
 import { ModalsModule } from './modals/modals.module';
 import { NavegadorModule } from './navegador/navegador.module';
 import { PieModule } from './pie/pie.module';
-import{HttpClientModule} from '@angular/common/http'
-
-
-
+import{HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http'
+import {ReactiveFormsModule} from '@angular/forms'
+import { AppRoutingModuleTsngModule } from './app-routing.module.tsng/app-routing.module.tsng.module';
+import { LoginComponent } from './login/login.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { InterceptorService } from './servicios/interceptor.service';
+import { PorfolioService } from './servicios/porfolio.service';
+import { PruebaComponent } from './prueba/prueba.component';
+import { EditarComponent } from './editar/editar.component';
+import { PersonaComponent } from './editar/persona/persona.component';
+import { EMainComponent } from './editar/eMain/eMain.component';
+import { EHabilidadesComponent } from './editar/e-habilidades/e-habilidades.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    LoginComponent,
+    PortfolioComponent,
+    PruebaComponent,
+    EditarComponent,
+    PersonaComponent,
+    EMainComponent,
+    EHabilidadesComponent
   ],
   imports: [
     BrowserModule,
@@ -25,9 +40,17 @@ import{HttpClientModule} from '@angular/common/http'
     ModalsModule,
     NavegadorModule,
     PieModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModuleTsngModule,
+    ReactiveFormsModule,
+  
+
+
   ],
-  providers: [],
+  providers: [PorfolioService,
+    {provide: HTTP_INTERCEPTORS, useClass: InterceptorService, multi:true}
+
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

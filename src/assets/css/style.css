@@ -32,14 +32,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
  
-.icon-twitter:before { content: '\f099'; } /* '' 
-.icon-facebook:before { content: '\f09a'; } /* '' 
-.icon-gplus:before { content: '\f0d5'; } /* '' 
-.icon-linkedin:before { content: '\f0e1'; } /* '' 
-.icon-linkedin:before { content: '\f0e1'; } /* '' 
-.icon-up:before { content: '\f176'; } /* '' 
+.icon-twitter:before { content: '\f099'; } '' 
+.icon-facebook:before { content: '\f09a'; } '' 
+.icon-gplus:before { content: '\f0d5'; }  '' 
+.icon-linkedin:before { content: '\f0e1'; } '' 
+.icon-linkedin:before { content: '\f0e1'; } '' 
+.icon-up:before { content: '\f176'; }  '' 
 
-/* CUSTOM RESETS
+ CUSTOM RESETS
 ================================================== */
 a {
     transition: color 0.25s ease-in-out;
@@ -170,7 +170,7 @@ html, body {
     max-height: 40%;
 }
 
-/* Navigation 
+Navigation 
 .navbar-nav > li > a {
     padding: 5px 0;
     font-weight: 600;
@@ -204,7 +204,7 @@ html, body {
     background-color: transparent;
 }
 
-/* HERO
+HERO
 ================================================== 
 .hero { 
     background: url(../img/hero.jpg) no-repeat center / cover; 
@@ -253,7 +253,7 @@ html, body {
     height: 600px;
 }
 
-/* SITEMAIN
+ SITEMAIN
 ================================================== 
 .site-main {
     position: relative;
@@ -261,7 +261,7 @@ html, body {
     background-color: #fff;
     z-index: 1;
 }
-/* site-section 
+ site-section 
 .site-section {
    padding-top: 120px;
 }
@@ -281,7 +281,7 @@ html, body {
     margin-bottom: 35px;
 }
 
-/* Section: Skills 
+Section: Skills 
 .section-skills {
     padding-bottom: 120px;
 }
@@ -308,7 +308,7 @@ html, body {
     background-color: #212121;  
 }
 
-/* Section: Services 
+ Section: Services 
 .section-services {
     position: relative;
     padding-top: 220px;
@@ -354,7 +354,7 @@ html, body {
     margin-bottom: 0;
 }
 
-/* Section: Portfolio 
+ Section: Portfolio 
 .section-portfolio {
     padding-bottom: 120px;
 }
@@ -434,7 +434,7 @@ html, body {
     margin-top: 10px;
 }
 
-/* Modal 
+Modal 
 .modal {
     z-index: 9999;
 }
@@ -480,7 +480,7 @@ html, body {
     text-align: center;
 }
 
-/* Section: Counters 
+ Section: Counters 
 .section-counters {
     background: url(../img/counters-bg.jpg) no-repeat fixed center / cover;
     width: 100%;
@@ -511,7 +511,7 @@ html, body {
     line-height: 0.8;
 }
 
-/* Section: Form
+Section: Form
 .section-form {
     padding-bottom: 120px;
 }
@@ -520,7 +520,7 @@ html, body {
     margin-top: 40px;
 }
 
-/* FOOTER
+FOOTER
 ================================================== 
 .site-footer {
     position: fixed;
@@ -570,4 +570,4 @@ a.icon-up-bg:hover {color: #212121;}
     line-height: 40px;
     color: #fff;
     text-align: center;
-}
+}*/

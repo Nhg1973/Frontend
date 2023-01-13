@@ -1,0 +1,21 @@
+
+
+<form [formGroup]="form" class="m-3" (ngSubmit)="onEnviar($event)">
+    <label> Nombre: </label> 
+    <input type="text" readonly placeholder="{{miPersona.nombre}}" value="{{miPersona.nombre}}" formControlName="nombreUsuario"  >
+    <label> Apellido: </label>
+    <input type="text" placeholder="{{miPersona.apellido}}"  formControlName="apellidoUsuario"  >
+    <label> Profesión: </label>
+    <input type="text" placeholder="{{miPersona.jobtitle}}"  formControlName="jobtitleUsuario"  >
+    <label> Una caracteristica: </label>
+    <input type="text" placeholder="{{miPersona.portfolios}}"  formControlName="portfolioUsuario"  >
+    <label> Una frase sobre mí: </label>
+    <input type="text" placeholder="{{miPersona.contact}}"  formControlName="contactUsuario"  >
+   
+  <button> editar </button>
+  <button [routerLink]="['/persona/{{miHabilidad.nombre}']">
+    volver a MENU
+  </button>
+  </form>
+  
+  

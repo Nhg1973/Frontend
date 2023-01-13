@@ -7,12 +7,14 @@ import { TrabajosComponent } from './trabajos/trabajos.component';
 
 
 
+
 @NgModule({
   declarations: [
     MainComponent,
     HabilidadesComponent,
     ServiciosComponent,
     TrabajosComponent
+ 
   ],
   imports: [
     CommonModule
